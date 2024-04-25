@@ -1,8 +1,20 @@
-import React from 'react'
+import { About } from '../../components/organisms/about/About';
+import { Destinations } from '../../components/organisms/destinations/Destinations'
+import { Header } from '../../components/organisms/header/Header';
+import { ChooseUsSection } from '../../components/organisms/chooseUsSection/ChooseUsSection';
+import './Main.css'
 
-export const Main = () => {
-    
+const Main = () => {
+
   return (
-    <div>Main ...</div>
+    <div className='container-main'>   
+      <Header/>
+      <Destinations/>
+      <ChooseUsSection />
+      <About />
+    </div>
+    
   )
 }
+
+export default Main;
